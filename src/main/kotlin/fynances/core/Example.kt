@@ -4,6 +4,4 @@ package fynances.core
  * @author Andrey Yevseyenko
  */
 
-fun main(args: Array<String>) {
-    println("Dddd")
-}
+data class Example(val data: String = "test")
