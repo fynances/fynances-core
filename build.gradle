@@ -5,7 +5,7 @@ sourceCompatibility = JavaVersion.VERSION_1_8
 targetCompatibility = JavaVersion.VERSION_1_8
 
 buildscript {
-    ext.kotlin_version = '1.0.4'
+    ext.kotlin_version = '1.0.6'
     repositories {
         mavenCentral()
     }
@@ -24,6 +24,7 @@ task wrapper(type: Wrapper) {
 
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    compile "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
 
     testCompile "junit:junit:4.4"
 }
