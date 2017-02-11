@@ -28,6 +28,7 @@ annotation class ToMapName(val name: String)
  * except the ones which are annotated with <code>@ToMapSkip</code>
  * Property names will be used as a key unless <code>@ToMapName("other name")</code> is used.
  * @param obj object to convert
+ * @return map built from obj
  */
 fun objectToMap(obj: Any): Map<String, Any?> = obj.javaClass.kotlin.memberProperties.filter {
     !it.annotations.any { it is ToMapSkip }
